@@ -126,7 +126,7 @@ def filtrar_superficie(paises):
 
 def ordenar_nombre(paises):      
 
-    paises_ordenados = sorted(paises, key=lambda pais: pais["nombre"])          # creamos una nueva lista ordenanda por nombre y tomamos cada pais y usa ese nombre para ordenar.
+    paises_ordenados = sorted(paises, key=lambda pais: pais["nombre"])          
     print("Países ordenados por nombre: ")
 
     for pais in paises_ordenados:
@@ -153,7 +153,7 @@ def mayor_poblacion(paises):
         print("No hay países cargados.")
         return
     
-    pais_mayor = max(paises, key=lambda pais: pais["poblacion"])                        # buscamos el pais con el valor mas grande en el campo "poblacion"
+    pais_mayor = max(paises, key=lambda pais: pais["poblacion"])                        
     print("País con mayor población: ")
     print(pais_mayor)
 
@@ -199,7 +199,7 @@ def cantidad_por_continente(paises):
         print("No hay países cargados.")
         return
     
-    continentes = {}    # creamos dicc vacio para guardar la cant por continente
+    continentes = {}    
 
     for pais in paises:
         continente = pais["continente"]
@@ -211,5 +211,5 @@ def cantidad_por_continente(paises):
 
     print("Cantidad de Países por Continente: ")
 
-    for continente, cantidad in continentes.items():   # recorremos el dicc
+    for continente, cantidad in continentes.items():   
         print(f"{continente}: {cantidad}: ")
