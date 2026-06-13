@@ -240,10 +240,55 @@ def mostrar_menu():
     print("Gestión de Datos de Paises")
     print("-" * 40)
     print("1. Mostrar todos los paises")
-    print("2. Agregar Pais")
-    print("3. Actualizar Pais")
-    print("4. Buscar Pais por nombre")
-    print("5. Filtrar Paises")
-    print("6. Ordenar Paises")
-    print("7. Estadisticas")
+    print("2. Agregar pais")
+    print("3. Actualizar pais")
+    print("4. Buscar pais por nombre")
+    print("5. Filtrar por continente")
+    print("6. Filtrar por poblacion")
+    print("7. Filtrar por superficie")
+    print("8. Ordenar por nombre")
+    print("9. Ordenar por poblacion")
+    print("10. Ordenar por superficie")
+    print("11. Mayor poblacion")
+    print("12. Menor poblacion")
+    print("13. Promedio poblacion")
     print("0. Salir")
+
+def main():
+    paises = cargar_paises()
+    while True:
+        mostrar_menu()
+        opcion = input("Elegir opcion: ").strip()
+        if opcion == "1":
+            mostrar_paises(paises)
+        elif opcion == "2":
+            agregar_paises(paises)
+        elif opcion == "3":
+            actualizar_pais(paises)
+        elif opcion == "4":
+            buscar_pais(paises)
+        elif opcion == "5":
+            filtrar_continente(paises)
+        elif opcion == "6":
+            filtrar_poblacion(paises)
+        elif opcion == "7":
+            filtrar_superficie(paises)
+        elif opcion == "8":
+            ordenar_nombre(paises)
+        elif opcion == "9":
+            ordenar_poblacion(paises)
+        elif opcion == "10":
+            ordenar_superficie(paises)
+        elif opcion == "11":
+            mayor_poblacion(paises)
+        elif opcion == "12":
+            menor_poblacion(paises)
+        elif opcion == "13":
+            promedio_poblacion(paises)
+        elif opcion == "0":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opcion invalida")
+
+main()
