@@ -21,6 +21,15 @@ def cargar_paises():
         print("Error: el archivo está siendo utilizado por otro programa")
     return paises
 
+def mostrar_paises(paises):
+    if not paises:
+        print("No hay paises para mostrar.")
+        return
+    print(f"\n{'Nombre':<25} {'Poblacion':>15} {'Superficie (km2)':>18} {'Continente':<15}")
+    print("-" * 75)
+    for p in paises:
+        print(f"{p['nombre']:<25} {p['poblacion']:>15,} {p['superficie']:>18,} {p['continente']:<15}")
+
 def pedir_nombres(mensaje):
     while True:
         dato = input(mensaje).strip()
@@ -237,7 +246,7 @@ def cantidad_por_continente(paises):
 
 def mostrar_menu():
     print("\n" + "-" * 40)
-    print("Gestión de Datos de Paises")
+    print("Gestion de Datos de Paises")
     print("-" * 40)
     print("1. Mostrar todos los paises")
     print("2. Agregar pais")
@@ -252,6 +261,8 @@ def mostrar_menu():
     print("11. Mayor poblacion")
     print("12. Menor poblacion")
     print("13. Promedio poblacion")
+    print("14. Promedio superficie")
+    print("15. Cantidad de paises por continente")
     print("0. Salir")
 
 def main():
@@ -285,10 +296,14 @@ def main():
             menor_poblacion(paises)
         elif opcion == "13":
             promedio_poblacion(paises)
+        elif opcion == "14":
+            promedio_superficie(paises)
+        elif opcion == "15":
+            cantidad_por_continente(paises)
         elif opcion == "0":
             print("Saliendo del programa...")
             break
         else:
-            print("Opcion invalida")
+            print("Opcion invalida.")
 
 main()
