@@ -32,11 +32,11 @@ TPI-Prog1/
 El sistema utiliza un archivo llamado
 "paises.csv" para almacenar la información.
 Formato:
-
+```
 nombre,poblacion,superficie,continente
 Argentina,45376763,2780400,America
 Brasil,213993437,8515767,America
-
+```
 ## Instrucciones de ejecución
 1. Clonar el repositorio
 gitclone[URL_DEL_REPOSITORIO]
@@ -80,12 +80,12 @@ Al agregar un país el programa te va pidiendo los datos de a uno. Si dejás un 
 Al buscar, no hace falta escribir el nombre completo. Si escribís "arg" te aparece Argentina.
 
 Al filtrar por población o superficie, ingresás un mínimo y un máximo y el programa te muestra todos los países que caen en ese rango.
-
+```
 Ingrese el País: Argentina
 Ingrese la cantidad de la población: 45376763
 Ingrese la cantidad de la superficie: 2780400
 Ingrese el Continente: America
-
+```
 - Buscar Pais
 Ingrese el País a buscar: Argentina
 {'nombre': 'Argentina', 'poblacion': 45376763, 'superficie': 2780400,
