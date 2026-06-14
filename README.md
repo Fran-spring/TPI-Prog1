@@ -18,7 +18,7 @@ El objetivo principal es aplicar los conceptos aprendidos durante la cursada, es
 - Git y GitHub
 
 ## Estructura del proyecto
-'''
+```
 TPI-Prog1/
 │
 ├── TPI.py
@@ -26,7 +26,7 @@ TPI-Prog1/
 ├── README.md
 ├── Documentacion.pdf
 └── (otros archivos auxiliares)
-'''
+```
 
 ## Archivo CSV
 El sistema utiliza un archivo llamado
