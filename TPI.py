@@ -95,7 +95,6 @@ def actualizar_pais(paises):
 
             pais["poblacion"] = poblacion
             pais["superficie"] = superficie
-            print("País actualizado correctamente.")
             print("\nPaís actualizado correctamente.")
             print(f"Nombre: {pais['nombre'].title()}")
             print(f"Población: {pais['poblacion']}")
@@ -103,7 +102,7 @@ def actualizar_pais(paises):
             print(f"Continente: {pais['continente'].title()}")
 
             encontrado = True
-
+            break
     if not encontrado:
         print("No se encontró el País buscado.")
 
