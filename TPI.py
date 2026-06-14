@@ -96,7 +96,11 @@ def actualizar_pais(paises):
             pais["poblacion"] = poblacion
             pais["superficie"] = superficie
             print("País actualizado correctamente.")
-            print(pais)
+            print("\nPaís actualizado correctamente.")
+            print(f"Nombre: {pais['nombre'].title()}")
+            print(f"Población: {pais['poblacion']}")
+            print(f"Superficie: {pais['superficie']}")
+            print(f"Continente: {pais['continente'].title()}")
 
             encontrado = True
 
@@ -159,24 +163,26 @@ def ordenar_nombre(paises):
     paises_ordenados = sorted(paises, key=lambda pais: pais["nombre"])          
     print("Países ordenados por nombre: ")
 
+    print("\n=== Países ordenados por nombre ===")
+
     for pais in paises_ordenados:
-        print(pais)
+        print(f"{pais['nombre'].title()} | Población: {pais['poblacion']} | Superficie: {pais['superficie']} | Continente: {pais['continente'].title()}")
 
 def ordenar_poblacion(paises):
 
     paises_ordenados = sorted(paises, key=lambda pais: pais["poblacion"])
-    print("Países ordenados por población: ")
+    print("\n=== Países ordenados por población ===")
 
     for pais in paises_ordenados:
-        print(pais)
+        print(f"{pais['nombre'].title()} | Población: {pais['poblacion']} | Superficie: {pais['superficie']} | Continente: {pais['continente'].title()}")
 
 def ordenar_superficie(paises):
 
     paises_ordenados = sorted(paises, key=lambda pais: pais["superficie"])
-    print("Países ordenados por superficie: ")
+    print("\n=== Países ordenados por superficie ===")
 
     for pais in paises_ordenados:
-        print(pais)
+        print(f"{pais['nombre'].title()} | Población: {pais['poblacion']} | Superficie: {pais['superficie']} | Continente: {pais['continente'].title()}")
 
 def mayor_poblacion(paises):
     if len(paises) == 0:
