@@ -77,7 +77,10 @@ def buscar_pais(paises):
 
     for pais in paises: 
         if pais_buscado.lower() in pais["nombre"].lower():
-            print(pais)
+            print(f"Nombre: {pais['nombre'].title()}")
+            print(f"Población: {pais['poblacion']}")
+            print(f"Superficie: {pais['superficie']}")
+            print(f"Continente: {pais['continente'].title()}")
             encontrado = True
     
     if not encontrado:
