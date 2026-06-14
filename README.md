@@ -88,15 +88,17 @@ Ingrese el Continente: America
 ```
 - Buscar Pais
 Ingrese el País a buscar: Argentina
+```
 {'nombre': 'Argentina', 'poblacion': 45376763, 'superficie': 2780400,
 'continente': 'America'}
-
+```
+```
 - Estadísticas
 País con mayor población:
 Brasil
 Promedio de población:
 129685100
-
+```
 ## Conclusión
 Este trabajo práctico permitió aplicar de manera integral los conceptos fundamentales abordados en la asignatura Programación 1, haciendo especial énfasis en el uso de estructuras de datos como listas y diccionarios, la implementación de funciones, la realización de validaciones de datos, la lectura y procesamiento de archivos CSV, y el trabajo colaborativo mediante el uso de Git y GitHub.
 
@@ -108,6 +110,8 @@ Asimismo, la realización del proyecto contribuyó a reforzar buenas prácticas 
 - Sofia Antonella Caliari
 
 ## Links
+```
 Links al repositorio del proyecto : 
 Link del video explicativo: 
 Enlace a la documentación en PDF: 
+```
