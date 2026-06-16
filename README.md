@@ -111,7 +111,6 @@ Asimismo, la realización del proyecto contribuyó a reforzar buenas prácticas 
 
 ## Links
 ```
-Links al repositorio del proyecto : 
-Link del video explicativo: 
-Enlace a la documentación en PDF: 
+Links al repositorio del proyecto : https://github.com/Fran-spring/TPI-Prog1.git
+Link del video explicativo: https://youtu.be/2fScaoshg7Y  
 ```
